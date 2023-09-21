@@ -1,0 +1,135 @@
+/* <!-- ----Dashboard ----- --> */
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.header {
+    height: 95px !important;
+}
+
+/* <!-- Tarejtas --> */
+
+.tarjetas {
+    height: auto;
+    padding: 10px;
+    margin: 20px;
+    margin-right: 5px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    background-color: #e8e8e8;
+    width: 220px;
+    border-radius: 20px;
+}
+
+.text {
+    color: white !important;
+
+}
+
+.cant {
+    font-size: 21px;
+}
+
+.tarjeta {
+    padding: 10px;
+    color: white !important;
+    border-radius: 10px;
+    width: 200px;
+    height: 100%;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+
+.textInfo {
+    font-size: 20px !important;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.tarInfo {
+    height: auto !important;
+    background-color: #118dd5;
+}
+
+    
+
+.tar1 {
+    background-color: #1a7996;
+}
+
+.tar2 {
+    background-color: #3aa4c4;
+
+}
+
+.tar3 {
+    background-color: #3ab4da;
+
+
+}
+
+.tar4 {
+    background-color: #2cb5df;
+
+}
+
+.perdida {
+    background-color: #d53b3b;
+
+}
+
+
+
+/* <!-- Graficas --> */
+
+.filtroAno {
+    background-color: white;
+    border: 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 0px;
+    font-size: 12px;
+
+
+}
+
+.contenidoGr {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+.graficas {
+    padding: 10px;
+    margin: 20px;
+    margin-left: 5px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+    background-color: #d1cccc;
+    border-radius: 20px;
+   
+}
+
+.graf1,
+.graf2,
+.graf3,
+.graf4 {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.graf2 {
+    height: 100%;
+}
+
+.bar-horiz {
+    height: 83% !important;
+}

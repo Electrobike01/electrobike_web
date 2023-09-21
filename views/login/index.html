@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../_public/style/login/login.css">
+  <title>Document</title>
+
+  <!----===== EncriptarContraena ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+  <!----===== SweetAlert ===== -->
+  <script src="../../dependencias/sweetAlert/js/sweetAlert-main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.css">
+
+</head>
+
+<body onload="chekearSesion()">
+  <h6 id="module" style="display: none;">login</h6>
+  <div class="wrapper">
+
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active">Iniciar sesión</h2>
+
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="../_public/img/Logo_electrobike.svg" id="icon" />
+      </div>
+
+      <!-- Login -->
+      <form id="iniciar">
+        <input type="email" id="correo" class="fadeIn second" name="correo" placeholder="Email">
+        <input type="password" id="contrasena" class="fadeIn third" name="contrasena" placeholder="Contrasena">
+
+        <input type="submit" class="fadeIn fourth iniciarL" name="iniciar" value="Iniciar">
+      </form>
+
+      <!-- Recordar contrasena   -->
+      <div id="formFooter">
+        <a class="underlineHover" id="olvidoC">Olvido la contraseña?</a>
+      </div>
+
+    </div>
+
+    <div id="passContent" style="display: none;">
+
+      <h2 class="active">Recuperar Contraseña</h2>
+
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="../_public/img/Logo_electrobike.svg" id="icon" />
+      </div>
+
+
+     <!-- -------------------- RECUPERAR CONTRASEÑA --------------- -->
+
+      <form id="recuperar">
+        <div class="mensj">
+          <span>Introduce el correo electrónico asociado a tu cuenta para cambiar tu contraseña.</span>
+        </div>
+        <input type="email" id="correoR" class="fadeIn second" name="correo" placeholder="Email">
+
+        <input type="submit" id="btn_recuperar" class="fadeIn fourth" name="Recuperar" value="Recuperar">
+      </form>
+
+
+      <!-- Recordar contrasena   -->
+      <div id="formFooter">
+        <a class="underlineHover" id="iniciar_">Iniciar sesión</a>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.css">
+  <script src="../../negocio/login/login.js"></script>
+ 
+
+</body>
+
+</html>
+

@@ -1,0 +1,97 @@
+/* ------------ LISTADOS ------- */
+@media(max-width: 767px) {
+
+    .titulo{
+       font-size: 40px !important;
+    }
+    .user {
+        display: none !important;
+    }
+
+    .header{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 6fr;
+    }
+}
+
+@media(max-width: 550px) {
+
+    /* ------- ACTUALIZAR RESPONSIVE ------- */
+    .contenedorActualizar{
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+    }
+
+
+    /* ------- TABLAS RESPONSIVE ------- */
+    .table thead {
+        display: none;
+        
+    }
+
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 100%;
+        height: 100% !important;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+    }
+
+    .table td {
+        padding-left: 50% !important;
+    }
+
+    .text-center{
+     
+        overflow-wrap: break-word;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        height: auto;
+        padding-left: 22px !important;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+        padding-top: 0px;
+     
+    }
+
+
+    /* Modal garantias responsive ----- */
+
+    .modal-body {
+        max-height: 800px !important;
+        overflow-y: scroll;
+
+    }
+    .row{
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+@media only screen and (max-width: 410px) {
+    .elementos{
+      grid-template-columns:1fr ;
+      gap: 20px
+    }
+    
+    .buscador{
+      justify-self: start;
+    }
+    }
+    
+
+
+

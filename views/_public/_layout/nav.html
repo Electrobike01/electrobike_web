@@ -1,0 +1,320 @@
+<nav id="nav" class="sidebar close">
+    <header>
+
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+            integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+        <div class="eslogan">
+            <div class="image-text">
+                <span class="texto">
+                    <h1 class="eslogan-text">Electrobike</h1>
+                </span>
+            </div>
+
+            <span class="image">
+                <span class="text nav-text"><img class="imagenLogo"
+                        src="../../views/_public/img/Logo_electrobike.svg"></span>
+            </span>
+        </div>
+
+
+        <i class='bx bx-chevron-right toggle arrow'></i>
+
+
+    </header>
+
+    <div class="menu-bar">
+        <div class="acordeon">
+
+
+            <!----------------------- Inicio --------------------->
+
+
+            <li  data-toggle="tooltip" data-delay='{"show": 10000, "hide": 10000}' title="Inicio" data-placement="lefth"id="inicio" class="li" >
+                
+                <a href="../dashboard/index.php">
+                    <i id="inicio_icon" class='bx bx-home icon'></i>
+                    <span id="inicio_text" class="nav-text text ">Inicio</span>
+                </a>
+            </li>
+
+
+            <!----------------------- Roles --------------------->
+
+            <li  data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' title="Roles" data-placement="lefth"id="roles" class="model li">
+                <a id="activador1">
+                    <i id="roles_icon" class='bx bxs-user-account icon'></i>
+                    <span id="roles_text" class="text nav-text">Roles </span>
+                    <i id="icon_despliegue1" class='bx bx-chevron-right icon_despliegue'></i>
+
+                </a>
+            </li>
+
+            <div  class="modulo oculto" id="modulo1">
+
+                <li id="registrar_roles" class="sub-li">
+                    <a id="activado" href="../roles/registrar.php">
+                        <i id="registrar_roles_icon" class='bx bx-book-add icon sub-icon'></i>
+                        <span id="registrar_roles_text" class="sub-text nav-text">Registrar
+                        </span>
+                    </a>
+                </li>
+
+
+
+                <li id="listar_roles" class="sub-li">
+                    <a id="activado" href="../roles/listar.php">
+                        <i id="listar_roles_icon" class='bx bx-list-ul icon sub-icon'></i>
+                        <span id="listar_roles_text" class="sub-text nav-text">Listar
+                        </span>
+                    </a>
+                </li>
+            </div>
+
+
+            <!----------------------- Usuarios --------------------->
+            <li  data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' title="Usuarios" data-placement="lefth" id="usuarios" class="model li">
+                <a id="activador2">
+                    <i id="usuarios_icon" class='bx bx-user-circle icon'></i>
+                    <span id="usuarios_text" class="text nav-text">Usuarios</span>
+                    <i id="icon_despliegue2" class='bx bx-chevron-right icon_despliegue'></i>
+
+                </a>
+            </li>
+
+            <div class="modulo oculto" id="modulo2">
+                <li id="registrar_usuarios" class="sub-li">
+                    <a id="activado" href="../usuarios/registrar.php">
+                        <i id="registrar_usuarios_icon" class='bx bx-book-add icon sub-icon'></i>
+                        <span id="registrar_usuarios_text" class="sub-text nav-text">Registrar
+                        </span>
+                    </a>
+                </li>
+
+                <li id="listar_usuarios" class="sub-li">
+                    <a id="activado" href="../usuarios/listar.php">
+                        <i id="listar_usuarios_icon" class='bx bx-list-ul icon sub-icon'></i>
+                        <span id="listar_usuarios_text" class="sub-text nav-text">Listar
+                        </span>
+                    </a>
+                </li>
+            </div>
+
+            <!----------------------- Proveedores --------------------->
+            <li  data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' title="Proveedores" data-placement="lefth" id="proveedores" class="model li">
+                <a id="activador3">
+                    <i id="proveedores_icon" class='bx bx-package icon'></i>
+                    <span id="proveedores_text" class="text nav-text">Proveedores </span>
+                    <i id="icon_despliegue3" class='bx bx-chevron-right icon_despliegue'></i>
+
+                </a>
+            </li>
+
+            <div class="modulo oculto" id="modulo3">
+                <li id="registrar_proveedores" class="sub-li">
+                    <a id="activado" href="../proveedores/registrar.php">
+                        <i id="registrar_proveedores_icon" class='bx bx-book-add icon sub-icon'></i>
+                        <span id="registrar_proveedores_text" class="sub-text nav-text">Registrar
+                        </span>
+                    </a>
+                </li>
+
+                <li id="listar_proveedores" class="sub-li">
+                    <a id="activado" href="../proveedores/listar.php">
+                        <i id="listar_proveedores_icon" class='bx bx-list-ul icon sub-icon'></i>
+                        <span id="listar_proveedores_text" class="sub-text nav-text">Listar
+                        </span>
+                    </a>
+                </li>
+            </div>
+
+            <!----------------------- Compras --------------------->
+
+            <li  data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' title="Compras" data-placement="lefth" id="compras" class="model li">
+                <a id="activador4">
+                    <i id="compras_icon" class='bx bx-cart icon'></i>
+                    <span id="compras_text" class="text nav-text">Compras </span>
+                    <i id="icon_despliegue4" class='bx bx-chevron-right icon_despliegue'></i>
+
+                </a>
+            </li>
+
+            <div class="modulo oculto" id="modulo4">
+                <li id="registrar_compras" class="sub-li">
+                    <a id="activado" href="../compras/registrar.php">
+                        <i id="registrar_compras_icon" class='bx bx-book-add icon sub-icon'></i>
+                        <span id="registrar_compras_text" class="nav-text sub-text">Registrar
+                        </span>
+                    </a>
+                </li>
+
+                <li id="listar_compras" class="sub-li">
+                    <a id="activado" href="../compras/listar.php">
+                        <i id="listar_compras_icon" class='bx bx-list-ul icon sub-icon'></i>
+                        <span id="listar_compras_text" class="sub-text nav-text">Listar
+                        </span>
+                    </a>
+                </li>
+            </div>
+
+
+            <!----------------------- Productos --------------------->
+            <li  data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' title="Productos" data-placement="lefth" id="productos" class="model li">
+                <a id="activador5">
+                    <i id="productos_icon" class='bx bx-cycling icon'></i>
+                    <span id="productos_text" class="text nav-text">Productos </span>
+                    <i id="icon_despliegue5" class='bx bx-chevron-right icon_despliegue'></i>
+
+                </a>
+            </li>
+
+            <div class="modulo_productos oculto" id="modulo5">
+                <li id="registrar_productos" class="sub-li">
+                    <a id="activado" href="../productos/registrar.php">
+                        <i id="registrar_productos_icon" class='bx bx-book-add icon sub-icon'></i>
+                        <span id="registrar_productos_text" class="sub-text nav-text">Registrar
+                        </span>
+                    </a>
+                </li>
+
+                <li id="listar_productos" class="sub-li">
+                    <a id="activado" href="../productos/listar.php">
+                        <i id="listar_productos_icon" class='bx bx-list-ul icon sub-icon'></i>
+                        <span id="listar_productos_text" class="sub-text nav-text">Listar
+                        </span>
+                    </a>
+                </li>
+
+                <li id="categorias_productos" class="sub-li">
+                    <a id="activado" href="../productos/categorias.php">
+                        <i id="categorias_productos_icon" class='bx bx-book-open icon sub-icon'></i>
+                        <span id="categorias_productos_text" class="sub-text nav-text">Categorias
+                        </span>
+                    </a>
+                </li>
+            </div>
+
+
+            <!----------------------- Clientes --------------------->
+            <li  data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' title="Clientes" data-placement="lefth" id="clientes" class="model li">
+                <a id="activador6">
+                    <i id="clientes_icon" class='bx bx-group icon'></i>
+                    <span id="clientes_text" class="text nav-text">Clientes </span>
+                    <i id="icon_despliegue6" class='bx bx-chevron-right icon_despliegue'></i>
+
+                </a>
+            </li>
+
+            <div class="modulo oculto" id="modulo6">
+                <li id="registrar_clientes" class="sub-li">
+                    <a id="activado" href="../clientes/registrar.php">
+                        <i id="registrar_clientes_icon" class='bx bx-book-add icon sub-icon'></i>
+                        <span id="registrar_clientes_text" class="sub-text nav-text">Registrar
+                        </span>
+                    </a>
+                </li>
+
+                <li id="listar_clientes" class="sub-li">
+                    <a id="activado" href="../clientes/listar.php">
+                        <i id="listar_clientes_icon" class='bx bx-list-ul icon sub-icon'></i>
+                        <span id="listar_clientes_text" class="sub-text nav-text">Listar
+                        </span>
+                    </a>
+                </li>
+            </div>
+
+
+
+            <!----------------------- Ventas --------------------->
+            <li  data-toggle="tooltip" data-delay='{"show": 500, "hide": 100}' title="Ventas" data-placement="lefth" id="ventas" class="model li">
+                <a id="activador7">
+                    <i id="ventas_icon" class='bx bx-coin icon'></i>
+                    <span id="ventas_text" class="text nav-text">Ventas </span>
+                    <i id="icon_despliegue7" class='bx bx-chevron-right icon_despliegue'></i>
+
+                </a>
+            </li>
+
+            <div class="modulo_productos oculto" id="modulo7">
+                <li id="registrar_ventas" class="sub-li">
+                    <a id="activado" href="../ventas/registrar.php">
+                        <i id="registrar_ventas_icon" class='bx bx-book-add icon sub-icon'></i>
+                        <span id="registrar_ventas_text" class="sub-text nav-text">Registrar
+                        </span>
+                    </a>
+                </li>
+
+                <li id="listar_ventas" class="sub-li">
+                    <a id="activado" href="../ventas/listar.php">
+                        <i id="listar_ventas_icon" class='bx bx-list-ul icon sub-icon'></i>
+                        <span id="listar_ventas_text" class="sub-text nav-text">Listar
+                        </span>
+                    </a>
+                </li>
+
+                <li id="garantias_ventas" class="sub-li">
+                    <a id="activado" href="../ventas/garantias.php">
+                        <i id="garantias_ventas_icon" class='bx bx-clipboard icon sub-icon'></i>
+                        <span id="garantias_ventas_text" class="sub-text nav-text">Garantias
+                        </span>
+                    </a>
+                </li>
+            </div>
+        </div>
+        <br>
+
+        <!----------------------- Cerrar Sesión --------------------->
+
+        <div class="bottom-content">
+            <li class="">
+                <a id="btnCerrarSesion">
+                    <i class='bx bx-log-out icon'></i>
+                    <span class="text nav-text">Cerrar Sesión</span>
+
+                </a>
+            </li>
+        </div>
+
+        <!----------------------- Soporte --------------------->
+
+        <div class="bottom-content soporte">
+            <li class="">
+                <a id="">          
+                    <i class='bx bx-help-circle icon'></i>
+                    <span class="text nav-text">Ayuda y soporte</span>
+                </a>
+            </li>
+        </div>
+        <!----------------------- LISTA TEMPORAL QUE HACERES --------------------->
+
+        <!--<li class="model li">-->
+        <!--    <a id="" href="../_errores/lista.php">-->
+        <!--        <i class='bx bx-task icon'></i>-->
+        <!--        <span id="clientes_text" class="text nav-text">Lista Detalles</span>-->
+        <!--        <i  id="icon_despliegue6" class='bx bx-chevron-right icon_despliegue'></i>-->
+
+        <!--    </a>-->
+        <!--</li>-->
+    </div>
+
+</nav>
+
+
+
+
+
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip({
+        template: '<div class="tooltip custom-tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>',
+       delay: { show: 300, hide: 10 }
+      });
+    });
+  </script>

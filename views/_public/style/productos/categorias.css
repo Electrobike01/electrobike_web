@@ -1,0 +1,48 @@
+.title{
+  font-size: 25px !important;
+}
+
+.cajas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button{
+  border: 0px;
+}
+
+.box1,.box2,.box3,.box4{
+    border-radius: 20px !important;
+    background-color: #eeeded;
+    padding: 20px;
+    text-align: center;
+}
+
+.imagen{
+width: 230px !important;  
+height: 335 !important;
+}
+
+.description {
+    font-size: 1.2em;
+}
+
+
+@media screen and (max-width: 950px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 610px) {
+    .cajas {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+
+  }
+  

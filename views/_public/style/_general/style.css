@@ -1,0 +1,334 @@
+/* Propiedades generales del estilo */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#nav{
+  z-index: 1;
+}
+
+:root {
+    /* ===== Guardar colores principales ===== */
+    --body-color: white;
+    --sidebar-color: #1D1D1B;
+    --primary-color: #118dd5;
+    --primary-color-light: #F6F5FF;
+    --toggle-color: #DDD;
+    --text-color: rgb(220, 220, 220);
+    --form-color: #D8D8D8;
+    --header-color: #118dd5;
+    --register-button: var(--primary-color);
+
+    /* ====== Transition ====== */
+    --tran-03: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.3s ease;
+}
+/* -------------- Estilo inputs desactivado -------- */
+
+select:disabled,
+input:disabled {
+    background-color: rgb(191, 191, 191)  !important;
+    color: #232222 !important;
+}
+
+select:disabled:hover,
+input:disabled:hover {
+    background-color: rgb(189, 189, 189) !important;
+
+}
+
+/* Tamaño y color del fondo */
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+
+.body-sin-scroll {
+  overflow: hidden;
+  width: 0px !important;
+}
+
+.contenedorActualizar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.contenedorActualizar {
+  scrollbar-width: thin; /* Anchura de la barra de desplazamiento */
+  scrollbar-color: transparent transparent; /* Color de la barra de desplazamiento */
+}
+
+label{
+  font-weight: 500;
+}
+
+
+/* Color del texto cuando se selecciona */
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Scroll Bar */
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(32, 192, 245), rgb(0, 191, 255));
+    border-radius: 2px;
+
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(rgb(83, 178, 246), rgb(37, 135, 220));
+
+}
+
+/* Pantalla sesion */
+.pantalla {
+    z-index: 990;
+    background-color: rgb(134, 198, 230);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.pantalla_oculta {
+    transition: 0.2s;
+    background-color: rgb(86, 186, 237, 0);
+    z-index: -1;
+}
+
+
+
+.compa {
+    background-color: rgb(134, 198, 230);
+    z-index: 1;
+}
+
+/* ---------------------------- Header ----------------------------------- */
+
+
+
+.titulo {
+    padding: 2%;
+    font-size: 40px;
+    color: white;
+    margin-left: 10px;
+
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: var(--header-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.user {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+#user_name {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos al final del texto recortado */
+    overflow: hidden;
+}
+
+.icon_user {
+    color: #DDD;
+    width: auto;
+    font-size: 50px;
+}
+
+.panel{
+    top: 0;
+    gap: 5px;
+    height: 75px;
+    display: flex;
+    margin-top: 110px;
+    right: -20px;
+    border-radius: 25px;
+    position: absolute;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border: 2px solid black;
+    color: white;
+    font-size: 30px;
+    margin-right: 30px;
+    z-index: 999999;
+    
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+
+    transition: all 0.3s !important;
+    overflow: hidden;
+}
+
+.conf{
+    margin-top: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.linkConf {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.panel_oculto{
+  height: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+
+td.Inactivo{
+    font-weight: bold;
+
+    color: #ff4300 !important;
+  
+  }
+  
+  td.Activo {
+    font-weight: bold;
+    color: #4ac93a !important;
+  }
+  
+/* Paginador */
+.cont {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+  
+  }
+  
+  .press{
+    background-color: #118dd5 !important;
+    color: white !important;
+  }
+  
+  .btn-pag{
+    font-size: 20px;
+    border: 1px solid black;
+    width: 22px;
+    border-radius: 3px;
+    border: 1px solid #dee2e6;
+  }
+  
+
+  /* ------------ boton editar administrador ------------- */
+  
+ .btn-admin {
+    margin-left: 10px;
+    position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90px;
+    height: 35px;
+    border: none;
+    padding: 0px 10px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+  
+    background-color: rgb(120, 120, 120);
+    box-shadow: 4px 4px 0px rgb(92, 92, 92);
+  }
+  
+  .btn-admin:hover {
+    color: transparent;
+  }
+  
+  .btn-admin:hover svg {
+   margin-top: 5px !important;
+    right: 43%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transition-duration: 0.2s;
+    fill: rgb(255, 255, 255);
+  }
+  
+  .btn-admin:active {
+    transform: translate(1px, 1px);
+    transition-duration: 0.1s;
+    box-shadow: 2px 2px 0px rgb(51, 51, 51);
+  }
+  
+
+  /* ------------ boton editar ------------- */
+.Btn {
+  margin-left: 10px;
+  position: relative;
+
+  align-items: center;
+  justify-content: flex-start;
+  width: 90px;
+  height: 35px;
+  border: none;
+  padding: 0px 10px;
+  background-color: rgb(38, 121, 255);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0px rgb(22, 95, 163);
+  transition-duration: 0.3s;
+}
+
+.svg {
+  width: 14px;
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+  fill: rgba(255, 255, 255, 0);
+  transition-duration: 0.3s;
+}
+
+
+.Btn:hover {
+  color: transparent;
+}
+
+.Btn:hover svg {
+  margin-top: 5px !important;
+  right: 43%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition-duration: 0.2s;
+  fill: rgb(255, 255, 255);
+
+}
+
+.Btn:active {
+  transform: translate(1px, 1px);
+  transition-duration: 0.1s;
+  box-shadow: 2px 2px 0px rgb(16, 75, 131);
+}
+  
+

@@ -1,0 +1,94 @@
+/* Propiedades generales del estilo */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  /* ===== Guardar colores principales ===== */
+  --body-color: white;
+  --sidebar-color: #1D1D1B;
+  --primary-color: #118dd5;
+  --primary-color-light: #F6F5FF;
+  --toggle-color: #DDD;
+  --text-color: rgb(220, 220, 220);
+  --form-color: #D8D8D8;
+  --header-color: #118dd5;
+  --register-button: var(--primary-color);
+
+  /* ====== Transition ====== */
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
+}
+
+.elementos {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.bus{
+  margin-left: 30px;
+  width: calc(100% - 40px)
+}
+
+.vinculo {
+  justify-self: start;
+}
+
+.buscador {
+  justify-self: end;
+}
+
+
+
+input[type="text"] {
+
+  padding: 5px;
+
+  border-radius: 5px;
+  margin-right: 10px;
+
+}
+
+/* Estilos selects filtros */
+.selects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.calendario{
+  border: 2px solid #18a8ff;
+  cursor: pointer;
+}
+
+
+.filtro {
+  border: 2px solid #18a8ff;
+  border-radius: 3px;
+
+}
+
+/* Estilos tablas propias */
+.impar {
+  background-color: #f2f2f2 !important;
+}
+
+.par,
+.impar {
+  vertical-align: middle !important;
+  text-align: center !important;
+
+  height: 1px !important; 
+}
+
+.resalto{
+  color: #118dd5;
+}

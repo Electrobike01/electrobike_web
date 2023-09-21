@@ -1,0 +1,280 @@
+/* Propiedades generales del estilo */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  /* ===== Guardar colores principales ===== */
+  --body-color: white;
+  --sidebar-color: #1D1D1B;
+  --primary-color: #118dd5;
+  --primary-color-light: #F6F5FF;
+  --toggle-color: #DDD;
+  --text-color: rgb(220, 220, 220);
+  --form-color: #D8D8D8;
+  --header-color: #118dd5;
+  --register-button: var(--primary-color);
+
+  /* ====== Transition ====== */
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
+}
+
+/* --------- input buscador --------- */
+
+.group_ {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: auto;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: 0.3s ease;
+
+  border-color: #118dd5;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px #39b0f5;
+
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: #14a8ff;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px #81d1ff;
+}
+
+.icon_ {
+  position: absolute;
+  left: 1rem;
+  fill: #9e9ea7;
+  width: 1rem;
+  height: 1rem;
+}
+
+/* --------- buscados dinamico ---------  */
+.elementos {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+
+.bus {
+  margin-left: 30px;
+  width: calc(100% - 40px)
+}
+
+.vinculo {
+  justify-self: start;
+}
+
+.buscador {
+  justify-self: end;
+
+}
+
+.contInac {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.inexistente {
+  display: none;
+}
+
+.inexistente_ {
+  display: none;
+}
+
+
+.buscador {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#inactivos {
+  margin-top: 10px;
+  width: 100px;
+  margin-left: 120px;
+}
+
+
+input[type="text"] {
+
+  padding: 5px;
+
+  border-radius: 5px;
+  margin-right: 10px;
+
+}
+
+/* --------------------------------- FORMULARIO ACTUALIZAR MODULO ---------------------------------- */
+.ventaActualizarModulo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #292929d9;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s;
+  z-index: 100;
+
+  justify-content: center !important;
+
+}
+
+.ventaActualizarModulos--show {
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .3s;
+
+}
+
+/* //Abuelo */
+.contenedorActualizarModulo {
+  margin: auto;
+  width: 100%;
+  max-width: 1100px;
+  height: 95%;
+  background-color: white;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+
+
+
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+
+}
+
+.tituloVentana {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.contenedorEstado {
+  display: grid;
+  grid-template-columns: 50%50%;
+  gap: 1em;
+}
+
+.contenedorBotones {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 50%50%;
+  gap: 10px;
+  margin-top: 30px !important;
+}
+
+.contenedorBotones {
+  display: flex;
+  margin-top: 30px !important;
+}
+
+.contenedorActualizar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+    
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+/* ------------ boton editar ------------- */
+.Btn {
+  margin-left: 10px;
+  position: relative;
+
+  align-items: center;
+  justify-content: flex-start;
+  width: 90px;
+  height: 35px;
+  border: none;
+  padding: 0px 10px;
+  background-color: rgb(38, 121, 255);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0px rgb(22, 95, 163);
+  transition-duration: 0.3s;
+}
+
+.svg {
+  width: 14px;
+  position: absolute;
+  right: 0;
+  margin-right: 15px;
+  fill: rgba(255, 255, 255, 0);
+  transition-duration: 0.3s;
+}
+
+
+.Btn:hover {
+  color: transparent;
+}
+
+.Btn:hover svg {
+  margin-top: 5px !important;
+  right: 43%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition-duration: 0.2s;
+  fill: rgb(255, 255, 255);
+
+}
+
+.Btn:active {
+  transform: translate(1px, 1px);
+  transition-duration: 0.1s;
+  box-shadow: 2px 2px 0px rgb(16, 75, 131);
+}
+
+/* Mensaje  */
+.mensaje {
+  font-size: 11px;
+  font-family: Arial;
+  color: gray;
+  margin-top: 3px;
+}
+
+.contenedorBotones {
+  display: flex;
+  margin-top: 30px !important;
+}
+
+

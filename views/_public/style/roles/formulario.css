@@ -1,0 +1,436 @@
+/* Propiedades generales del estilo */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  /* ===== Guardar colores principales ===== */
+  --body-color: white;
+  --sidebar-color: #1d1d1b;
+  --primary-color: #118dd5;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: rgb(220, 220, 220);
+  --form-color: #d8d8d8;
+  --header-color: #118dd5;
+  --register-button: var(--primary-color);
+
+  /* ====== Transition ====== */
+  --tran-03: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.3s ease;
+  --tran-05: all 0.3s ease;
+}
+
+
+/* --------- buscados dinamico --------- */
+
+.group_ {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  max-width: auto;
+}
+
+.input {
+  width: 200px;
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+
+  border: 2px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background-color: #f3f3f4;
+  color: #0d0c22;
+  transition: 0.3s ease;
+
+  border-color: #118dd5;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px #39b0f5;
+}
+
+.input::placeholder {
+  color: #9e9ea7;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: #14a8ff;
+  background-color: #fff;
+  box-shadow: 0 0 0 4px #81d1ff;
+}
+
+
+
+/* ---------------------- formulario --------------------- */
+
+main {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  padding: 40px;
+  background-color: #eaeaea;
+  border-radius: 0px;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+h2 {
+  font-weight: 80px;
+}
+
+
+
+.formulario__label {
+  display: block;
+  font-weight: 700;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.formulario__grupo-input {
+  position: relative;
+}
+
+.formulario__input {
+  width: 100%;
+  background: #fff;
+  border: 3px solid transparent;
+  border-radius: 3px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 40px 0 10px;
+  transition: 0.3s ease all;
+}
+
+.formulario__input:focus {
+  border: 3px solid #0075ff;
+  outline: none;
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+.formulario__input-error {
+  font-size: 12px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.formulario__input-error-activo {
+  display: block;
+}
+
+.formulario__validacion-estado {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  z-index: 100;
+  font-size: 16px;
+  opacity: 0;
+}
+
+.formulario__checkbox {
+  margin-right: 10px;
+}
+
+.formulario__grupo-terminos,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+  margin-right: 38px;
+  grid-column: span 2;
+}
+
+.formulario__mensaje {
+  height: 45px;
+  line-height: 45px;
+  background: #f66060;
+  padding: 0 15px;
+  border-radius: 3px;
+  display: none;
+}
+
+.formulario__mensaje-activo {
+  display: block;
+}
+
+.formulario__mensaje p {
+  margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulario__btn {
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.1s ease all;
+}
+
+.formulario__btn__mas {
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  background: #118dd5;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.1s ease all;
+}
+
+.formulario__btn__menos {
+  height: 45px;
+  line-height: 45px;
+  width: 30%;
+  background: #ff4242;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.1s ease all;
+}
+
+.formulario__btn__menos.close {
+  display: none;
+}
+
+.formulario__btn:hover {
+  box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+.formulario__mensaje-exito-activo {
+  display: block;
+}
+
+.switchs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* tres columnas iguales */
+  grid-gap: 15px;
+  /* espacio entre los elementos */
+}
+
+.switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* dos columnas, una para el texto y otra para la imagen */
+  border: 3px solid #c5c9ca !important;
+  border-radius: 5px;
+  padding: 20px;
+  align-items: center;
+  /* centra verticalmente los elementos en la cuadrícula */
+}
+
+.switch:nth-child(7) {
+  grid-column: 2 / 3;
+}
+
+.element {
+  grid-column: 2 / -1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.toggleOff,
+.toggleOn {
+  cursor: pointer;
+  justify-self: end;
+}
+
+.ocultoxx {
+  display: none;
+}
+
+.elementos {
+  display: grid;
+  grid-template-rows: auto 4fr;
+  /* crea tres filas con la misma altura */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* crea dos columnas con la misma anchura */
+  gap: 10px;
+}
+
+.buscador {
+  grid-column: 2;
+}
+
+.textin {
+  margin-right: 10px;
+  /* espacio entre el texto y la imagen */
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+}
+
+
+/* --------------- Boton registrar ------------ */
+.registrar {
+  border: none;
+  outline: none;
+  background-color: #118dd5;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  transition: all ease 0.1s;
+  box-shadow: 0px 5px 0px 0px  #0c6395;
+}
+
+.registrar:active {
+  transform: translateY(5px);
+  box-shadow: 0px 0px 0px 0px #063e5e;
+}
+
+/* ------------- INPUT NOMBRE ------------- */
+
+/* --------. TOGGLES ------------- */
+
+.checkbox {
+  display: none;
+}
+
+.slider {
+  width: 90px;
+  height: 40px;
+  overflow: hidden;
+  background-color: #cacaca;
+  border: 5px solid transparent;
+  border-radius: 30px;
+  box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.20);
+  display: flex;
+  align-items: center;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.slider::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 3px rgb(0, 0, 0, 0.20);
+  transform: translateX(-50px);
+  transition: .3s;
+}
+
+.checkbox:checked~.slider {
+
+  background-color: #67bdff;
+
+}
+
+.checkbox:checked~.slider::before {
+  box-shadow: 0 0 10px 3px rgb(0, e, e, 0.20);
+  transform: translateX(50px);
+}
+
+
+
+
+@media screen and (max-width: 1250px) {
+
+  .formulario__grupo-btn-enviar {
+    margin-right: 0px;
+  }
+
+  .switchs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .switch:nth-child(7) {
+    grid-column: 1;
+  }
+}
+
+@media screen and (max-width: 827px) {
+  .switchs {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .switch {
+    width: auto;
+  }
+
+  
+.slider {
+  width: 70px;
+  height: 35px;
+  border-radius: 40px;
+}
+
+.slider::before {
+  border-radius: 20px;
+  transform: translateX(-35px);
+}
+
+
+.checkbox:checked~.slider::before {
+  box-shadow: 0 0 10px 3px rgb(0, e, e, 0.20);
+  transform: translateX(35px);
+}
+
+  .textin {
+
+    font-size: 30px;
+  }
+}
+
+
+@media screen and (max-width: 340px) {
+  .switch {
+    width: auto;
+  }
+
+  
+.slider {
+  width: 50px;
+  height: 30px;
+  border-radius: 40px;
+}
+
+.slider::before {
+  border-radius: 20px;
+  transform: translateX(-20px);
+}
+
+
+.checkbox:checked~.slider::before {
+  box-shadow: 0 0 10px 3px rgb(0, e, e, 0.20);
+  transform: translateX(20px);
+}
+
+  .textin {
+
+    font-size: 20px;
+  }
+}
